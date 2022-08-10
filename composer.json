@@ -2,7 +2,7 @@
   "type": "library",
   "name": "entergon/common",
   "description": "Common stuff for entergon projects",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "require": {},
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^3.8",
@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Src\\": "src/"
+      "Entergon\\Common\\": "src/"
     },
     "classmap": [
       "src/"

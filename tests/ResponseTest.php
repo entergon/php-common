@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
+use Entergon\Common\Response;
+use Entergon\Common\StatusCode;
+use Entergon\Common\Status;
+
 final class ResponseTest extends TestCase
 {
   public function testIsArrayResponse(): void
