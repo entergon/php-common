@@ -17,4 +17,4 @@ jobs:
 
       - uses: php-actions/composer@v6
         with:
-          command: composer test
+          command: ./vendor/bin/phpunit --testdox tests
