@@ -1,0 +1,38 @@
+{
+  "type": "library",
+  "name": "entergon/common",
+  "description": "Common stuff for entergon projects",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "require": {},
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.8",
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "fix": "php-cs-fixer fix",
+    "test": "phpunit --testdox tests",
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
