@@ -11,13 +11,10 @@ final class Response
     $data = null
   ) {
     return [
-      [
-        'status' => Status::OK,
-        'code' => StatusCode::OK,
-        'message' => $message,
-        'data' => $data,
-      ],
-      200
+      'status' => Status::OK,
+      'code' => StatusCode::OK,
+      'message' => $message,
+      'data' => $data,
     ];
   }
 
@@ -25,16 +22,12 @@ final class Response
     string $message = '',
     $errors = [],
     StatusCode $code = StatusCode::OK,
-    HttpStatusCode $status = HttpStatusCode::NOT_FOUND
   ) {
     return [
-      [
-        'status' => Status::ERROR,
-        'code' => $code->value,
-        'message' => $message,
-        'error' => $errors,
-      ],
-      $status->value
+      'status' => Status::ERROR,
+      'code' => $code->value,
+      'message' => $message,
+      'error' => $errors,
     ];
   }
 }
