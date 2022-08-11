@@ -15,12 +15,6 @@ final class ResponseTest extends TestCase
     $this->assertIsArray(Response::success(''));
   }
 
-  public function testSuccessHasCode(): void
-  {
-    $response = Response::success('');
-    $this->assertEquals(200, $response[1]);
-  }
-
   public function testValidResponse(): void
   {
     $response = Response::success('');
@@ -29,6 +23,6 @@ final class ResponseTest extends TestCase
       'code' => StatusCode::OK,
       'message' => '',
       'data' => null,
-    ], $response[0]);
+    ], $response);
   }
 }
