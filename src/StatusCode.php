@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Entergon\Common;
 
 /**
- * entergon status codes.
+ * Status codes.
  *
  * @see https://doc.entergon.de/share/78373611-8376-4fdc-be05-0671a04a76a6
  */

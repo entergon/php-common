@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Entergon\Common;
 
+/**
+ * Every API endpoint should respond that way.
+ */
 final class Response
 {
   public static function success(
