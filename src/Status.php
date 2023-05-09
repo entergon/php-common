@@ -10,7 +10,7 @@ namespace Entergon\Common;
 enum Status: string
 {
   case OK = 'OK';
-  /** @deprecated use ERROR instead */
+  /* @deprecated use ERROR instead */
   case NOK = 'NOK';
   case IDLE = 'IDLE';
   case PENDING = 'PENDING';

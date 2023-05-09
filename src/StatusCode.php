@@ -27,3 +27,15 @@ enum StatusCode: string
   case MISSING_DATA = '0x4711';
   case FATAL = '0x9999';
 }
+
+/**
+ * Global.
+ *
+ * @category 0x000
+ */
+enum StatusCodeGlobal: string
+{
+  case UnknownError = '0x0';
+  /* Tritt auf, wenn in einer User-Aktion Sachen nicht mit rechten Dingen zugehen und der aktuelle Zustand eigentlich nie erreicht werden sollte. Könnte von einer User manipulation oder einem Systemfehler kommen */
+  case IllegalStatement = '0x1';
+}

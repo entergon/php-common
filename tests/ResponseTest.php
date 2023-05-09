@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
-
 use Entergon\Common\Response;
-use Entergon\Common\StatusCode;
 use Entergon\Common\Status;
+use Entergon\Common\StatusCode;
+use PHPUnit\Framework\TestCase;
 
 final class ResponseTest extends TestCase
 {
